@@ -1,44 +1,39 @@
 {
-  "name": "react-native-chatbot",
-  "version": "0.0.1-alpha.12",
-  "description": "React Native Chatbot",
-  "main": "lib/index.js",
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint lib/*.jsx",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "test": "./node_modules/.bin/mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive tests/**/*.spec.js",
-    "test:watch": "npm test -- --watch",
-    "test:coverage": "nyc npm test"
-  },
-  "files": [
-    "lib"
-  ],
-  "nyc": {
-    "reporter": [
-      "text",
-      "html"
-    ],
-    "exclude": [
-      "tests/**"
-    ],
-    "extension": [
-      ".jsx"
-    ]
-  },
-  "repository": {
+  "_from": "git+https://github.com/mastermindagme90/react-native-chatbot.git",
+  "_id": "react-native-chatbot@0.0.1-alpha.12",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-chatbot",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "https://github.com/LucasBassetti/react-native-chatbot"
+    "raw": "react-native-chatbot@git+https://github.com/mastermindagme90/react-native-chatbot.git",
+    "name": "react-native-chatbot",
+    "escapedName": "react-native-chatbot",
+    "rawSpec": "git+https://github.com/mastermindagme90/react-native-chatbot.git",
+    "saveSpec": "git+https://github.com/mastermindagme90/react-native-chatbot.git",
+    "fetchSpec": "https://github.com/mastermindagme90/react-native-chatbot.git",
+    "gitCommittish": null
   },
-  "keywords": [
-    "react",
-    "chat",
-    "chatbot"
+  "_requiredBy": [
+    "/"
   ],
-  "license": "MIT",
+  "_resolved": "git+https://github.com/mastermindagme90/react-native-chatbot.git#7c28b13107009fc30de979c1bd90bca904c64a1d",
+  "_spec": "react-native-chatbot@git+https://github.com/mastermindagme90/react-native-chatbot.git",
+  "_where": "/Ramiz/Data/My/My/ResponseTeam/Project",
   "bugs": {
     "url": "https://github.com/LucasBassetti/react-native-chatbot/issues"
   },
-  "homepage": "https://github.com/LucasBassetti/react-native-chatbot#readme",
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "random-id": "1.0.3",
+    "react-native-image-picker": "^2.3.1",
+    "react-native-loader": "^1.1.0"
+  },
+  "deprecated": false,
+  "description": "React Native Chatbot",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^10.0.1",
@@ -60,15 +55,45 @@
     "react-native-mock": "^0.3.1",
     "sinon": "^7.2.3"
   },
-  "dependencies": {
-    "lodash": "^4.17.4",
-    "prop-types": "^15.5.10",
-    "random-id": "1.0.3",
-    "react-native-loader": "^1.1.0"
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/LucasBassetti/react-native-chatbot#readme",
+  "keywords": [
+    "react",
+    "chat",
+    "chatbot"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-native-chatbot",
+  "nyc": {
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ],
+    "extension": [
+      ".jsx"
+    ]
   },
   "peerDependencies": {
     "react": ">= 0.14.0 < 17.0.0-0",
     "react-native": ">= 0.45.0",
     "styled-components": ">= 2.0.0 < 4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasBassetti/react-native-chatbot.git"
+  },
+  "scripts": {
+    "lint": "eslint lib/*.jsx",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive tests/**/*.spec.js",
+    "test:coverage": "nyc npm test",
+    "test:watch": "npm test -- --watch"
+  },
+  "version": "0.0.1-alpha.12"
 }
