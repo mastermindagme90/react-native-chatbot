@@ -577,7 +577,7 @@ catch (err) {
         paddingRight: 16,
         paddingLeft: 16,
         height: 50,
-        width: width - (80 +(showImagePicker?40:0)),
+        width: width - (80 +(showImagePicker&&editable?40:0)),
         
       },
       content: {
@@ -636,7 +636,7 @@ catch (err) {
             invalid={inputInvalid}
             color={botBubbleColor}
           >
-            {showImagePicker&&<View style={styles.imagePickerContainerStyle}>
+            {showImagePicker && editable &&<View style={styles.imagePickerContainerStyle}>
               <TouchableOpacity style={{...styles.imagePickerStyle||{},backgroundColor:botBubbleColor}} activeOpacity={0.8} onPress={this.onImagePickerClick}>
                 <Text style={styles.imagePickerText}>{`+`}</Text>
                 </TouchableOpacity>
